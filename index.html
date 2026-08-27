@@ -2,38 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>K-pop Daily & Weekly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7b7dc" />
+  <title>Newsly K-Pop ✦</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <img
-        class="brand-icon"
-        src="https://cdn-icons-png.flaticon.com/512/12565/12565330.png"
-        alt="K-pop Updates Icon"
-      />
-      <div class="brand-text">
-        <h1>K-pop Daily & Weekly</h1>
-        <p>Grouped updates + source links ✨</p>
-      </div>
+  <div class="sparkle-layer" aria-hidden="true">
+    <span>✦</span><span>♡</span><span>✧</span><span>✦</span><span>♡</span>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="mini-brand" href="#" aria-label="Newsly K-Pop home">
+        <span class="mini-bow">🎀</span>
+        <span>Newsly <b>K-Pop</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#trending">Trending</a>
+        <a href="#latest">Latest</a>
+        <a href="#updates">Updates</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <span id="themeIcon">☾</span>
+      </button>
     </div>
   </header>
 
-  <main class="container">
-    <section class="toolbar">
-      <button class="tab active" data-mode="daily">Daily</button>
-      <button class="tab" data-mode="weekly">Weekly</button>
+  <main>
+    <section class="hero">
+      <img src="newsly-banner.png" alt="Newsly K-Pop banner" class="hero-image" />
+      <div class="hero-overlay">
+        <span class="hero-pill">✦ your daily k-pop corner ✦</span>
+        <h1>Newsly K-Pop</h1>
+        <p>Catch up on the updates, comebacks, announcements &amp; stories everyone is talking about.</p>
+      </div>
     </section>
 
-    <section id="daily" class="grid"></section>
-    <section id="weekly" class="grid hidden"></section>
+    <section class="content-wrap">
+      <div class="welcome-row">
+        <div>
+          <p class="eyebrow">WELCOME, K-POP FANS 🎀</p>
+          <h2>What’s happening today?</h2>
+          <p class="subtext">Big stories, little updates, and all the links in one cute place.</p>
+        </div>
+        <div class="date-chip" id="todayChip">✦ TODAY</div>
+      </div>
+
+      <div class="tabs" id="updates">
+        <button class="tab active" data-mode="daily">📅 Daily</button>
+        <button class="tab" data-mode="weekly">🗓️ Weekly</button>
+      </div>
+
+      <section id="daily" class="mode-section">
+        <div class="section-heading" id="trending">
+          <div>
+            <span class="section-kicker">🔥 HOT RIGHT NOW</span>
+            <h2>Trending</h2>
+          </div>
+          <span class="section-note">Most talked-about updates</span>
+        </div>
+        <div id="trendingGrid" class="news-grid"></div>
+
+        <div class="section-heading latest-heading" id="latest">
+          <div>
+            <span class="section-kicker">🆕 JUST IN</span>
+            <h2>Latest</h2>
+          </div>
+          <span class="section-note">Fresh from the K-pop world</span>
+        </div>
+        <div id="latestGrid" class="news-grid"></div>
+      </section>
+
+      <section id="weekly" class="mode-section hidden">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">🗓️ WEEKLY ROUNDUP</span>
+            <h2>This Week</h2>
+          </div>
+          <span class="section-note">Your quick catch-up</span>
+        </div>
+        <div id="weeklyGrid" class="news-grid"></div>
+      </section>
+
+      <div class="tiny-note">♡ Newsly K-Pop groups coverage from multiple sources so you can compare the stories yourself. ♡</div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>Tip: Edit <strong>data.json</strong> to add your own articles 💗</p>
+    <span>Made with ♡ for K-pop fans</span>
+    <span>Newsly K-Pop ✦</span>
   </footer>
 
   <script src="app.js"></script>
