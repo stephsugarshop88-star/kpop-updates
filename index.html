@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K-pop Daily & Weekly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img
+        class="brand-icon"
+        src="https://cdn-icons-png.flaticon.com/512/12565/12565330.png"
+        alt="K-pop Updates Icon"
+      />
+      <div class="brand-text">
+        <h1>K-pop Daily & Weekly</h1>
+        <p>Grouped updates + source links ✨</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <button class="tab active" data-mode="daily">Daily</button>
+      <button class="tab" data-mode="weekly">Weekly</button>
+    </section>
+
+    <section id="daily" class="grid"></section>
+    <section id="weekly" class="grid hidden"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Tip: Edit <strong>data.json</strong> to add your own articles 💗</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
