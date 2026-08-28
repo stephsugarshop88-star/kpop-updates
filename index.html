@@ -49,10 +49,17 @@
         <div class="date-chip" id="todayChip">✦ TODAY</div>
       </div>
 
-      <div class="tabs" id="updates">
-        <button class="tab active" data-mode="daily">📅 Daily</button>
-        <button class="tab" data-mode="weekly">🗓️ Weekly</button>
+      <div class="action-row">
+        <div class="tabs" id="updates">
+          <button class="tab active" data-mode="daily">📅 Daily</button>
+          <button class="tab" data-mode="weekly">🗓️ Weekly</button>
+        </div>
+        <div class="admin-actions">
+          <button class="add-button" id="openForm" type="button">＋ Add Update</button>
+          <button class="export-button" id="exportData" type="button">↓ Export data.json</button>
+        </div>
       </div>
+      <div id="localNotice" class="local-notice hidden">✦ You have saved updates in this browser. Export <b>data.json</b> and replace the file on GitHub when you're ready to publish them for everyone. <button id="clearLocal" type="button">Clear my saved updates</button></div>
 
       <section id="daily" class="mode-section">
         <div class="section-heading" id="trending">
@@ -89,6 +96,25 @@
     </section>
   </main>
 
+
+  <div class="modal hidden" id="updateModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+      <button class="close-modal" id="closeForm" type="button" aria-label="Close">×</button>
+      <div class="modal-heading"><span class="section-kicker">🎀 NEW POST</span><h2 id="formTitle">Add a K-pop update</h2><p>Fill this out and your new card will appear instantly.</p></div>
+      <form id="updateForm">
+        <div class="form-grid">
+          <label><span>🎤 Artist / Group</span><input id="group" placeholder="BTS, TXT, BLACKPINK..." required></label>
+          <label><span>🏷️ Update type</span><input id="badge" placeholder="Comeback, Announcement..." required></label>
+        </div>
+        <label><span>📰 Title</span><input id="title" placeholder="Write your headline..." required></label>
+        <label><span>✏️ Short summary</span><textarea id="description" rows="4" placeholder="Explain what happened in 1–3 sentences..." required></textarea></label>
+        <label><span>🖼️ Picture URL</span><input id="image" type="url" placeholder="https://example.com/image.jpg" required><small>Paste a direct image link.</small></label>
+        <div class="source-builder"><div class="source-builder-top"><div><span class="source-label">🔗 Article source</span><small>Add one or more articles covering this update.</small></div><button type="button" class="small-add" id="addSource">＋ Add another source</button></div><div id="sourcesForm"></div></div>
+        <div class="form-actions"><button type="button" class="cancel-button" id="cancelForm">Cancel</button><button type="submit" class="save-button">🎀 Save Update</button></div>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <span>Made with ♡ for K-pop fans</span>
     <span>Newsly K-Pop ✦</span>
