@@ -1,0 +1,51 @@
+{
+  "daily": [
+    {
+      "id": "jennie-1787987423482",
+      "group": "JENNIE",
+      "badge": "NEW ALBUM",
+      "title": "JENNIE RELEASES NEW ALBUM TITLED \"FALLEN ANGEL\"",
+      "description": "After a long wait Blackpink's Jennie released a new EP \" FALLEN ANGEL\". This EP includes three new songs that are available on all digital platforms! Physical album release date is the 30th of October 2026.",
+      "image": "https://www.billboard.com/wp-content/uploads/2026/08/JENNIE-fallen-angel-ep-cover-billlboard-1800.jpg?w=1024",
+      "time": "Aug 29",
+      "sources": [
+        {
+          "site": "MSN",
+          "title": "JENNIE NEW EP \" FALLEN ANGEL\"",
+          "url": "https://www.msn.com/en-us/entertainment/music/jennie-drops-fallen-angel-ep-with-dark-fairytale-music-video/ar-AA2b6MO4?ocid=BingNewsSerp",
+          "time": "Today"
+        },
+        {
+          "site": "BBANGYA",
+          "title": "JENNIE \" FALLEN ANGEL\" PREORDER",
+          "url": "https://bbangya.co.uk/products/pre-order-blackpink-jennie-fallen-angel-mini-album",
+          "time": "Today"
+        }
+      ]
+    },
+    {
+      "id": "txt-tomorrow-x-together--1787876371665",
+      "group": "TXT(Tomorrow X Together)",
+      "badge": "WORLD TOUR",
+      "title": "TXT ANNOUNCES WORLD TOUR 2026-2027",
+      "description": "TXT announces their fifth world tour named \" STEAL THE WIND\". This tour will kick off in Korea this year on November 13 2026! Keep in mind that NEW dates will be released soon!",
+      "image": "https://0.soompi.io/wp-content/uploads/2026/08/26081037/TXT-Steal-the-Wind-Tour-Stops.jpeg",
+      "time": "Aug 27",
+      "sources": [
+        {
+          "site": "InMusic",
+          "title": "TOMORROW X TOGETHER Announces ‘STEAL THE WIND’ World Tour: See All Dates",
+          "url": "https://inmusicblog.com/k-pop/txt-steal-the-wind-world-tour-dates/",
+          "time": "Today"
+        },
+        {
+          "site": "Soompi",
+          "title": "TXT Announces Dates And Cities For 2026-2027 World Tour \"STEAL THE WIND\"",
+          "url": "https://www.soompi.com/article/1865936wpp/txt-announces-dates-and-cities-for-2026-2027-world-tour-steal-the-wind",
+          "time": "Today"
+        }
+      ]
+    }
+  ],
+  "weekly": []
+}
